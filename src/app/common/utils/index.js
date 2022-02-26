@@ -25,7 +25,7 @@ export const animationFrameTimeout = (callback, millisecond) => {
   let animationFrameRequest;
 
   const animationCallback =  (timestamp) => {
-    if (lastUpdated == undefined)
+    if (lastUpdated === undefined)
       lastUpdated = timestamp;
 
     if (timestamp - lastUpdated >= millisecond) {

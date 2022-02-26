@@ -5,7 +5,7 @@ import styles from './profile_pic.module.scss';
 
 const ProfilePic = ({ isFirstTime, isFullScreen, onClickProfilePic, screenSize }) => {
   {/* Only Animates first time when the user image is shown */ }
-  const showMobileResponsive = screenSize == 'sm' || screenSize == 'md';
+  const showMobileResponsive = screenSize === 'sm' || screenSize === 'md';
 
   const transitionFrom = showMobileResponsive ? 'translate(calc(75px - 50vw), calc(50vh - 100px)) scale(1)' : 'translate(calc(100px - 50vw), calc(50vh - 100px)) scale(1)';
   const transitionTo = showMobileResponsive ? 'translate(calc(75px - 50vw), calc(50vh - 225px)) scale(1)' : 'translate(calc(100px - 50vw), calc(50vh - 250px)) scale(1)';

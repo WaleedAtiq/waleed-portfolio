@@ -57,14 +57,14 @@ class ProjectsMobile extends Component {
       const { selectedProjectId } = this.state;
       const index = techList.findIndex((element) => element.id === selectedProjectId);
 
-      if (direction == 'l') {
+      if (direction === 'l') {
         if (index < techList.length - 1) {
           this.onProjectSelected({ selectedId: techList[index + 1].id })
         } else {
           this.onProjectSelected({ selectedId: techList[0].id })
         }
-      } else if (direction == 'r') {
-        if (index != 0) {
+      } else if (direction === 'r') {
+        if (index !== 0) {
           this.onProjectSelected({ selectedId: techList[index - 1].id })
         } else {
           updateBodyType(landingPageBody.TIMELINE);
@@ -121,7 +121,7 @@ class ProjectsMobile extends Component {
     const tech = find(techList, techItem => (techItem.id === selectedProjectId));
     const totalItems = projectsList ? projectsList.length : 0;
 
-    const isPreviousButtonEnabled = currentSlide != 0;
+    const isPreviousButtonEnabled = currentSlide !== 0;
     const isNextButtonEnabled = currentSlide < totalItems - 1;
 
     const params = {
@@ -153,15 +153,15 @@ class ProjectsMobile extends Component {
           enter={{ opacity: 1 }}
           leave={{ opacity: 0 }}
         >
-          {tech => tech.id == 'android' && (
+          {tech => tech.id === 'android' && (
             value => {
               const { imagePosition, from, enter, leave } = techTransitionAnimation[tech.id];
-              const fromAnimation = tech.id == selectedProjectId ? from : enter;
-              const toAnimation = tech.id == selectedProjectId ? enter : leave;
+              const fromAnimation = tech.id === selectedProjectId ? from : enter;
+              const toAnimation = tech.id === selectedProjectId ? enter : leave;
               const isReactRelated =
-                tech.id == "react" ||
-                tech.id == "react-native" ||
-                tech.id == "electron";
+                tech.id === "react" ||
+                tech.id === "react-native" ||
+                tech.id === "electron";
 
               return (
                 <Spring
@@ -190,10 +190,11 @@ class ProjectsMobile extends Component {
                             right: imagePosition.right,
                             top: imagePosition.top,
                             bottom: imagePosition.bottom,
-                            opacity: tech.id == 'android' ? 0.8 : 0.4,
-                            transform: tech.id == 'android' ? imagePosition.transform : props.transform
+                            opacity: tech.id === 'android' ? 0.8 : 0.4,
+                            transform: tech.id === 'android' ? imagePosition.transform : props.transform
                           }}
                           className={styles.background_image}
+                          alt=""
                         ></img>
                       </Div>
                     )
@@ -247,7 +248,7 @@ class ProjectsMobile extends Component {
                   <ProjectListItem
                     key={index}
                     project={project}
-                    className={`${index == currentSlide ? styles.project_list_item__selected : ''} ${styles.project_list_item}`}
+                    className={`${index === currentSlide ? styles.project_list_item__selected : ''} ${styles.project_list_item}`}
                   />
                 </Div>
               ))}

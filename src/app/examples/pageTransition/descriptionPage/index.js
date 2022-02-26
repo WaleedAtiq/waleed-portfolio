@@ -45,6 +45,7 @@ const DescriptionPage = ({ itemPosition, selectedItemDetails,  history: { replac
         ref={imageRef}
         src={selectedItemDetails.image}
         className={`${styles.image} ${showDescription ? styles.show : ''}`}
+        alt=""
       />
 
       <div className={`${styles.description_container} ${showDescription ? styles.show : ''}`}>

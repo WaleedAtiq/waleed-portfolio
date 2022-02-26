@@ -10,10 +10,10 @@ class TimelineSelector extends Component {
     const { onItemSelected, listValue, selectedId } = this.props;
     const currentIndex = listValue.findIndex(item => item.id === selectedId);
     const selectedIndex = listValue.findIndex(
-      item => item.id == selecteditem.id
+      item => item.id === selecteditem.id
     );
 
-    if (currentIndex != selectedIndex) {
+    if (currentIndex !== selectedIndex) {
       onItemSelected({
         selectedId: selecteditem.id,
         selectionNext: selectedIndex > currentIndex
@@ -47,13 +47,13 @@ class TimelineSelector extends Component {
           >
             {props => (
               <Fragment>
-                {index != 0 && <div className={styles.vertical_divider}></div>}
+                {index !== 0 && <div className={styles.vertical_divider}></div>}
                 <Div
                   row
                   align
                   justify
                   className={`${styles.company_logo_container} ${
-                    item.id != selectedId ? styles.onclick_selector : ""
+                    item.id !== selectedId ? styles.onclick_selector : ""
                     }`}
                   onClick={() => this.onClickitemItem(item)}
                 >
@@ -63,7 +63,7 @@ class TimelineSelector extends Component {
                     justify
                     className={styles.first_logo_container}
                   >
-                    <img className={styles.logo} src={item.firstLogo} />
+                    <img alt="" className={styles.logo} src={item.firstLogo} />
                   </Div>
                   {tech ? (
                     <div
@@ -85,6 +85,7 @@ class TimelineSelector extends Component {
                           maxWidth: props.maxWidth,
                           paddingRight: props.paddingRight
                         }}
+                        alt=""
                         className={styles.logo}
                         src={item.restLogo}
                       />

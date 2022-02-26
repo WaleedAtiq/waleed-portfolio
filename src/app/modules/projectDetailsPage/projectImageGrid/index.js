@@ -26,7 +26,7 @@ const ProjectImageGrid = ({ projectId, gridItemSelected }) => {
     ];
 
     // after all the images has been loaded sorts the loaded image according to the index
-    if (loadedProjectImages.current.length == projectImages.length) {
+    if (loadedProjectImages.current.length === projectImages.length) {
       loadedProjectImages.current = loadedProjectImages.current.sort((currentImage, nextImage) => {
         if (currentImage.index > nextImage.index)
           return 1;
@@ -61,6 +61,7 @@ const ProjectImageGrid = ({ projectId, gridItemSelected }) => {
               src={projectImage.image}
               onLoad={(image)=> onImageLoad(image, projectImage)}
               className={styles.image}
+              alt=""
             />
           </div>
         );
@@ -76,7 +77,7 @@ const getImageRatio = projectImage => {
 
   // If project image ratio is already specified then return from the array instead of calculating
   if (specificProjectImages) {
-    const specificProjectImage = specificProjectImages.find(image => (image.id == projectImage.id));
+    const specificProjectImage = specificProjectImages.find(image => (image.id === projectImage.id));
     if (specificProjectImage) {
       return {
         ...projectImage,

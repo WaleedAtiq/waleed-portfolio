@@ -32,6 +32,7 @@ const ListingPage = ({ onItemSelected }) => {
           <img
             className={styles.tech_image}
             src={image}
+            alt=""
           />
         </Div>
       ))}

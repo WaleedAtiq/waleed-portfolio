@@ -1,8 +1,7 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import styles from "./landing.scss";
 import Header from "../header/header";
 import Timeline from "../timeline/timeline";
-import Loader from "../loader/loader";
 import { landingPageBody } from "../../constants/landingConstants";
 import Projects from "../projects/projects";
 import ProjectsMobile from '../projects/mobile';
@@ -35,7 +34,7 @@ class Landing extends Component {
   componentDidMount() {
     animationFrameTimeout(() => {
       const { screenSize } = this.props;
-      if (screenSize == 'sm' || screenSize == 'md')
+      if (screenSize === 'sm' || screenSize === 'md')
         window.addEventListener("deviceorientation", this.handleOrientation, false);
 
       this.setState({ isFirstTime: false, allowMouseHover: true });
@@ -81,7 +80,7 @@ class Landing extends Component {
 
       animationFrameTimeout(() => {
         const { screenSize } = this.props;
-        if (screenSize == 'sm' || screenSize == 'md')
+        if (screenSize === 'sm' || screenSize === 'md')
           window.addEventListener("deviceorientation", this.handleOrientation, false);
   
         this.setState({ allowMouseHover: true });
@@ -92,7 +91,7 @@ class Landing extends Component {
   //-----------------------------HideFullScreen
   hideFullScreen = () => {
     const { screenSize } = this.props;
-    if (screenSize == 'sm' || screenSize == 'md')
+    if (screenSize === 'sm' || screenSize === 'md')
       window.removeEventListener("deviceorientation", this.handleOrientation, false);
 
     this.setState({ showDescription: false, allowMouseHover: false });
@@ -120,8 +119,8 @@ class Landing extends Component {
           style={props}
           className={styles.body_content_container}
         >
-          {bodyType == landingPageBody.PROJECT && (showMobile ? <ProjectsMobile updateBodyType={this.updateBodyType} /> : <Projects />)}
-          {bodyType == landingPageBody.TIMELINE && (showMobile ? <TimelineMobile updateBodyType={this.updateBodyType} /> :  <Timeline />)}
+          {bodyType === landingPageBody.PROJECT && (showMobile ? <ProjectsMobile updateBodyType={this.updateBodyType} /> : <Projects />)}
+          {bodyType === landingPageBody.TIMELINE && (showMobile ? <TimelineMobile updateBodyType={this.updateBodyType} /> :  <Timeline />)}
         </Div>
       )
     )
@@ -133,8 +132,8 @@ class Landing extends Component {
     let fromAnimation, enterAnimation, leaveAnimation;
 
     if (
-      this.previousBodyType == landingPageBody.NONE ||
-      bodyType == landingPageBody.NONE
+      this.previousBodyType === landingPageBody.NONE ||
+      bodyType === landingPageBody.NONE
     ) {
       fromAnimation = {
         opacity: 1,
@@ -148,7 +147,7 @@ class Landing extends Component {
         opacity: 0,
         transform: "translate(0px, 100px)"
       };
-    } else if (bodyType == landingPageBody.TIMELINE) {
+    } else if (bodyType === landingPageBody.TIMELINE) {
       fromAnimation = {
         opacity: 0,
         transform: "translate(-300px, 0px)"
@@ -161,7 +160,7 @@ class Landing extends Component {
         opacity: 0,
         transform: "translate(300px, 0px)"
       };
-    } else if (bodyType == landingPageBody.PROJECT) {
+    } else if (bodyType === landingPageBody.PROJECT) {
       fromAnimation = {
         opacity: 0,
         transform: "translate(300px, 0px)"
@@ -193,7 +192,7 @@ class Landing extends Component {
             enter={enterAnimation}
             leave={leaveAnimation}
             config={{
-              delay: this.previousBodyType == landingPageBody.NONE ? 500 : 0
+              delay: this.previousBodyType === landingPageBody.NONE ? 500 : 0
             }}
           >
             {bodyType => this.getBodyContent(bodyType, screenSize)}

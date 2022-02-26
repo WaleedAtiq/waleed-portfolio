@@ -1,4 +1,4 @@
-import React, { Component, memo, useEffect, useState } from "react";
+import React, { memo } from "react";
 import { Transition, config } from "react-spring/renderprops";
 import Div from "Common/components/div";
 import styles from "./header_description.module.scss";
@@ -39,7 +39,7 @@ const HeaderDescription = ({
                 className={styles.user_button}
                 onClick={onClickTimeline}
               >
-                <a className={styles.name} href="https://www.facebook.com/Waleeeeeeeeeeeeeeed/" target="_blank"> <b >Waleed Atiq </b> </a>
+                <a className={styles.name} href="https://www.facebook.com/Waleeeeeeeeeeeeeeed/" rel="noopener noreferrer" target="_blank"> <b >Waleed Atiq </b> </a>
                 <Underline isFirstTime={isFirstTime} />
               </Div>, A
               Software Engineer </Div>with 4+ years of Web Development

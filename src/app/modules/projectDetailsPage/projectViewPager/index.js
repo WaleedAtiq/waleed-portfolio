@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef } from "react"
+import React, { Component } from "react"
 import styles from "./project_view_pager.module.scss"
 import PaginationButton from "Common/components/paginationButton"
 import Div from "Common/components/div"
@@ -16,7 +16,7 @@ class ProjectViewPager extends Component {
 
   componentWillReceiveProps(nextProps) {
     const { initialSlide } = nextProps;
-    if (this.swiper && typeof initialSlide == 'number') {
+    if (this.swiper && typeof initialSlide === 'number') {
       this.swiper.slideTo(initialSlide);
     }
   }
@@ -60,13 +60,13 @@ class ProjectViewPager extends Component {
         >
           {map(projectImages, (projectImage, index) => (
             <div className="swiper-zoom-container" key={index}>
-              <img className={styles.swiper_item} src={projectImage.image} />
+              <img className={styles.swiper_item} src={projectImage.image} alt="" />
             </div>
           ))}
         </Swiper>
 
         <PaginationButton
-          isEnabled={currentSlide != 0}
+          isEnabled={currentSlide !== 0}
           onClick={() => this.swiper.slidePrev()}
           className={styles.pagination_button_left}
         />

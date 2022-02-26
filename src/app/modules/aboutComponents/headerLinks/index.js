@@ -29,10 +29,10 @@ const HeaderLinks = ({
   });
   const springProps = useSpring({
     transformUnderline:
-      bodyType == landingPageBody.TIMELINE
+      bodyType === landingPageBody.TIMELINE
         ? "translateX(0px)"
         : "translateX(77px)",
-    underlineWidth: bodyType == landingPageBody.TIMELINE ? 62 : 37
+    underlineWidth: bodyType === landingPageBody.TIMELINE ? 62 : 37
   });
 
   return transition.map(

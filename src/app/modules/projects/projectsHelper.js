@@ -3,17 +3,17 @@ import { random } from "Common/utils";
 // Component Specific Logic (used in technology page)
 export const getImagePosition = (techType, imageAlignment, isMobile = false) => {
   let lowerRange = 15;
-  let higherRange = techType == 'android' ? 70 : 20;
+  let higherRange = techType === 'android' ? 70 : 20;
 
   if (isMobile) {
-    lowerRange = techType == 'android' ? 15 : 30;
-    higherRange = techType == 'android' ? 70 : 35;
+    lowerRange = techType === 'android' ? 15 : 30;
+    higherRange = techType === 'android' ? 70 : 35;
   }
 
   const imageLeft = random(lowerRange, higherRange);
   const imageTop = random(lowerRange, higherRange);
 
-  if (techType == "android") {
+  if (techType === "android") {
     switch (imageAlignment) {
       case 0:
         return {
@@ -59,9 +59,9 @@ export const getBackgroundTransition = (techType, imageAlignment, isFirstAnimati
   let transition = {};
 
   if (
-    techType == "react" ||
-    techType == "react-native" ||
-    techType == "electron"
+    techType === "react" ||
+    techType === "react-native" ||
+    techType === "electron"
   ) {
     // transform and rotate are going to be used by image tag
     transition = {
@@ -78,7 +78,7 @@ export const getBackgroundTransition = (techType, imageAlignment, isFirstAnimati
         transform: "scale(0) rotate(360deg)"
       }
     };
-  } else if (techType == "android") {
+  } else if (techType === "android") {
     switch (imageAlignment) {
       case 0:
         transition = {

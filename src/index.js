@@ -3,8 +3,6 @@ import { hydrate, render } from 'react-dom';
 import './index.css';
 import App from './app/app';
 import * as serviceWorker from './serviceWorker';
-import { ConnectedRouter } from "connected-react-router";
-import { createBrowserHistory } from "history";
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {

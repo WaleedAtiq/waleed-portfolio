@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import iconEmail from "Icons/icon-email.png";
 import iconLinkedIn from "Icons/icon-linkedin.png";
 import iconGithub from "Icons/icon-github.png";
@@ -18,30 +18,33 @@ const ContactComponent = ({ className, isWhite, hideResume }) => {
       align
       className={`${styles.social_container} ${className}`}
     >
-      <a className={styles.icon_link} target="_blank" href="https://github.com/WaleedAtiq">
+      <a className={styles.icon_link} rel="noopener noreferrer" target="_blank" href="https://github.com/WaleedAtiq">
         <img
           src={isWhite ? iconGithubWhite : iconGithub}
           className={styles.icon}
+          alt=""
         />
       </a>
-      <a className={styles.icon_link} target="_blank" href="https://www.linkedin.com/in/waleed-atiq/">
+      <a className={styles.icon_link} rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/waleed-atiq/">
         <img
           src={isWhite ? iconLinkedInWhite : iconLinkedIn}
           className={styles.icon}
         />
       </a>
-      <a className={styles.icon_link} target="_blank" href="mailto:waleedatiq4@gmail.com">
+      <a className={styles.icon_link} rel="noopener noreferrer" target="_blank" href="mailto:waleedatiq4@gmail.com">
         <img
           src={isWhite ? iconEmailWhite : iconEmail}
           className={styles.icon}
+          alt=""
         />
       </a>
       {
         !hideResume && (
-          <a className={styles.icon_link} target="_blank" href="https://drive.google.com/file/d/1z8ixhQuj3lK84B3Pi_DT2fg11zmQFdH4/view?usp=sharing">
+          <a className={styles.icon_link} rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1z8ixhQuj3lK84B3Pi_DT2fg11zmQFdH4/view?usp=sharing">
           <img
             src={isWhite ? iconResumeWhite : iconResume}
             className={styles.icon}
+            alt=""
           />
         </a>  
         )

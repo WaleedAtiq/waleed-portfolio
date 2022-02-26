@@ -22,17 +22,17 @@ class Div extends Component {
     const classNameArray = [
       row ? styles.div_row : styles.div_column,
       align
-        ? typeof align == "string"
+        ? typeof align === "string"
           ? styles[`align_${align}`]
           : styles.align_center
         : "",
       justify
-        ? typeof justify == "string"
+        ? typeof justify === "string"
           ? styles[`justify_${justify}`]
           : styles.justify_center
         : "",
       alignSelf
-        ? typeof alignSelf == "string"
+        ? typeof alignSelf === "string"
           ? styles[`align_self_${alignSelf}`]
           : styles.align_self_center
         : "",
@@ -43,7 +43,7 @@ class Div extends Component {
     let styleValue = style ? style : {};
 
     if (flex) {
-      styleValue = { ...styleValue, flex: typeof flex == "number" ? flex : 1 };
+      styleValue = { ...styleValue, flex: typeof flex === "number" ? flex : 1 };
     }
 
     if (animate) {

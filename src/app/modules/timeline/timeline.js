@@ -52,7 +52,7 @@ class Timeline extends Component {
   render() {
     const { selectedTimelineId, selectionNext } = this.state;
     const timeline = find(timelineListValue, timelineItem => {
-      return timelineItem.id == selectedTimelineId;
+      return timelineItem.id === selectedTimelineId;
     });
 
     return (
@@ -70,6 +70,7 @@ class Timeline extends Component {
               src={timeline.backgroundImage}
               style={props}
               className={styles.background_image}
+              alt=""
             ></img>
           )}
         </Transition>

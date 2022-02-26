@@ -26,7 +26,7 @@ const ProjectListItem = ({ index, project, style, className }) => {
         id="project-container"
         style={{ ...style, zIndex: index }}
         className={`${styles.slide_items} ${className} ${
-          project.state == "CENTERED" ? styles.is_selected : ""
+          project.state === "CENTERED" ? styles.is_selected : ""
         }`}
       >
         <Div fillParent align justify>
@@ -34,6 +34,7 @@ const ProjectListItem = ({ index, project, style, className }) => {
             id="project-image"
             src={project.icon}
             className={styles.image}
+            alt=""
           />
         </Div>
 

@@ -142,7 +142,7 @@ class Loader extends Component {
       });
     }
 
-    if (contentLoadedPercentage != 100) {
+    if (contentLoadedPercentage !== 100) {
       // if by chance its not 100 then show 100 on page
       this.setState({ contentLoadedPercentage: 100 });
     }     
@@ -184,7 +184,7 @@ class Loader extends Component {
 
     return (
       <Div className={styles.loader_top_container}>
-        {pageState == loaderPageStates.SHOW_PAGE && children}
+        {pageState === loaderPageStates.SHOW_PAGE && children}
         {
           showBackground && (
             <Div row align className={styles.background_loader_container}>
@@ -200,7 +200,7 @@ class Loader extends Component {
                 leave={{ opacity: 0 }}
               >
                 {pageState =>
-                  pageState == loaderPageStates.IS_LOADING &&
+                  pageState === loaderPageStates.IS_LOADING &&
                   (transitionProps => (
                     <Fragment>
                       <Spring
@@ -240,7 +240,7 @@ class Loader extends Component {
           leave={{ opacity: 0 }}
         >
           {pageState =>
-            pageState == loaderPageStates.SHOW_INTRO &&
+            pageState === loaderPageStates.SHOW_INTRO &&
             (props => (
               <Intro
                 style={props}

@@ -70,7 +70,7 @@ export default class Intro extends Component {
 
     if (index < refObject.length - 1) {
       //Setting the leftMargin of the second div
-      if(index == 3 && refObject[3].ref.current && refObject[4].ref.current) {
+      if(index === 3 && refObject[3].ref.current && refObject[4].ref.current) {
         this.secondDivMargin = refObject[3].ref.current.offsetWidth/2 - refObject[4].ref.current.offsetWidth/2;
       }
       animationFrameTimeout(() => this.animateNext(index + 1), refObject[index].nextTimeoutDuration);
@@ -92,9 +92,9 @@ export default class Intro extends Component {
     //So the text doesn't look centered aligned although it is programatically correct
     const componentHeightPadding = 15;
 
-    if (direction == 'right') {
+    if (direction === 'right') {
       let finalObjectWidth = objectWidth / 2;
-      if (refObject[referenceObjectIndex - 1].direction == 'bottom') {
+      if (refObject[referenceObjectIndex - 1].direction === 'bottom') {
         const previousRef = refObject[referenceObjectIndex - 1].ref;
         finalObjectWidth += previousRef.current.offsetWidth / 2;
       }
@@ -104,7 +104,7 @@ export default class Intro extends Component {
         divPositionX: divPositionX + finalObjectWidth,
         refObject
       })
-    } else if (direction == 'bottom') {
+    } else if (direction === 'bottom') {
       const resultDivPositionY = Math.abs((divPositionY + componentHeightPadding) + (objectHeight / 2));
       refObject[referenceObjectIndex] = { ...refObject[referenceObjectIndex], isVisible: true }
 
@@ -113,7 +113,7 @@ export default class Intro extends Component {
         refObject
       });
 
-    } else if (direction == 'bottom-center') {
+    } else if (direction === 'bottom-center') {
       const previousRef = refObject[referenceObjectIndex - 1].ref;
       const secondPreviousRef = refObject[referenceObjectIndex - 2].ref;
       const previousObjectWidth = previousRef.current.offsetWidth;
@@ -128,7 +128,7 @@ export default class Intro extends Component {
         divPositionY: resultDivPositionY,
         refObject
       });
-    } else if (direction == 'init') {
+    } else if (direction === 'init') {
       this.setState({
         divPositionX: objectWidth / 2,
         divPositionY: (objectHeight + componentHeightPadding) / 2,

@@ -58,7 +58,7 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
 
 
   useEffect(() => {
-    if (leftTranslateHeader != 0) {
+    if (leftTranslateHeader !== 0) {
       setHeaderLeftTranslate({
         from: { transform: `translateX(0px)` },
         to: { transform: `translateX(${leftTranslateHeader}px)` },
@@ -122,6 +122,7 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
             src={closeIcon} 
             onClick={()=>toggleViewPager(false)}
             className={styles.close_icon}
+            alt=""
           />
           <ProjectViewPager
             projectId={projectId}
@@ -163,13 +164,14 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
                 if (isPageRedirectedFromListing) history.goBack();
                 else history.replace("/");
               }}
+              alt=""
             />
 
             {project.link ? (
               <a
                 href={project.link.value}
                 className={styles.project_link}
-                target="_blank"
+                rel="noopener noreferrer" target="_blank"
               >
                 {project.link.type}
               </a>
@@ -199,7 +201,7 @@ const ProjectDetailsPage = ({ match, style, history, location, startPageEndAnima
               <ProjectImageGrid
                 projectId={projectId}
                 gridItemSelected={(index) => {
-                  if (screenSize == 'sm' || screenSize == 'md') {
+                  if (screenSize === 'sm' || screenSize === 'md') {
                     toggleViewPager(true);
                   }
                   setGridIndex(index)

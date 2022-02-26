@@ -7,9 +7,9 @@ import { parseNewLine } from 'Common/utils';
 const getHighlight = (highlight) => {
 
   if (highlight) {
-    if (highlight == 'green')
+    if (highlight === 'green')
       return styles.highlight_green;
-    else if (highlight == 'blue')
+    else if (highlight === 'blue')
       return styles.highlight_blue;
   }
 
@@ -33,9 +33,9 @@ const ProjectDescription = ({ project, className }) => {
       </Div>
 
       {map(description, (description, index) => {
-        if (description.type == "text") {
+        if (description.type === "text") {
           return <div key={index} className={`${styles.text} ${getHighlight(description.highlight)}`}>{parseNewLine(description.value)}</div>;
-        } else if (description.type == 'points') {
+        } else if (description.type === 'points') {
 
           return (
             <Div key={index} className={`${styles.points_container} ${getHighlight(description.highlight)}`}>
@@ -49,7 +49,7 @@ const ProjectDescription = ({ project, className }) => {
               </ul>
             </Div>
           )
-        } else if (description.type == 'header') {
+        } else if (description.type === 'header') {
           return (<div key={index} className={styles.header}>{description.value}</div>)
         }
 

@@ -30,7 +30,7 @@ class RightContainer extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.item.id != this.props.item.id) {
+    if (nextProps.item.id !== this.props.item.id) {
       const { item } = nextProps;
       const { projects } = this.state;
 
@@ -47,7 +47,7 @@ class RightContainer extends Component {
 
   getSlideObject = projects => {
     return map(projects, (project, index) => {
-      const state = index == 0 ? "CENTERED" : "LIST";
+      const state = index === 0 ? "CENTERED" : "LIST";
 
       return {
         ...projectsListValue[project],
@@ -119,25 +119,25 @@ class RightContainer extends Component {
     const { projects } = this.state;
     const { item } = this.props;
 
-    let selectedIndex = projects[item.id].findIndex(slide => slide.state == "CENTERED"); 
-    selectedIndex = position == 'next' ? selectedIndex + 1 : selectedIndex - 1; // move to slide either next or to previous position
+    let selectedIndex = projects[item.id].findIndex(slide => slide.state === "CENTERED"); 
+    selectedIndex = position === 'next' ? selectedIndex + 1 : selectedIndex - 1; // move to slide either next or to previous position
 
     const nextCondition = (selectedIndex < projects[item.id].length);
     const previousCondition = (selectedIndex >= 0);
 
-    if (position == 'next'? nextCondition : previousCondition) {
+    if (position === 'next'? nextCondition : previousCondition) {
       const updatedSlide = map(projects[item.id], (slide, index) => {
         if (index < selectedIndex - 1) {
           return {
             ...slide,
             state: "GONE"
           };
-        } else if (index == selectedIndex - 1) {
+        } else if (index === selectedIndex - 1) {
           return {
             ...slide,
             state: "BEHIND"
           };
-        } else if (index == selectedIndex) {
+        } else if (index === selectedIndex) {
           return {
             ...slide,
             state: "CENTERED"
@@ -163,7 +163,7 @@ class RightContainer extends Component {
     const { projects } = this.state;
     const { item, className } = this.props;
     const selectedIndex = projects[item.id]
-      ? projects[item.id].findIndex(slide => slide.state == "CENTERED")
+      ? projects[item.id].findIndex(slide => slide.state === "CENTERED")
       : 0;
 
     const isPrevButtonClickable = selectedIndex > 0;

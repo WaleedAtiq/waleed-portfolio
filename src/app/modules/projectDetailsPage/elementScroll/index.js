@@ -81,7 +81,7 @@ const ElementScroll = ({
         className={styles.project_name}
         style={{
           transform: titleSizeAnim,
-          left: screenSize == "sm" ? titleLeftAnimResposive : titleLeftAnim,
+          left: screenSize === "sm" ? titleLeftAnimResposive : titleLeftAnim,
           top: titleTopAnim,
           opacity: containerOpacityAnimation.opacity,
         }}

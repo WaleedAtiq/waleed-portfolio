@@ -45,7 +45,7 @@ export function detectSwipe(el, swipeCallback) {
       velocity = (Math.abs(swipe_det.eY - swipe_det.sY)) / timeTaken;
     }
 
-    if (direction != "" && velocity >= velocityThreshhold)
+    if (direction !== "" && velocity >= velocityThreshhold)
       swipeCallback(direction)
 
     velocity = 0;

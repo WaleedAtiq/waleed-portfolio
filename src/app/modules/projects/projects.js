@@ -64,12 +64,12 @@ class Projects extends Component {
     const { selectedTechId, techTransitionAnimation } = this.state;
 
     const tech = find(techList, techItem => {
-      return techItem.id == selectedTechId;
+      return techItem.id === selectedTechId;
     });
 
     return (
       <Div row fillParent align="stretch" className={styles.timeline_container}>
-        <img src={techDoodleImage} className={styles.background_static_image} />
+        <img alt="" src={techDoodleImage} className={styles.background_static_image} />
 
         <Transition
           items={tech}
@@ -81,12 +81,12 @@ class Projects extends Component {
           {tech => tech.id && (
             value => {
               const { imagePosition, from, enter, leave } = techTransitionAnimation[tech.id];
-              const fromAnimation = tech.id == selectedTechId ? from : enter;
-              const toAnimation = tech.id == selectedTechId ? enter : leave;
+              const fromAnimation = tech.id === selectedTechId ? from : enter;
+              const toAnimation = tech.id === selectedTechId ? enter : leave;
               const isReactRelated =
-                tech.id == "react" ||
-                tech.id == "react-native" ||
-                tech.id == "electron";
+                tech.id === "react" ||
+                tech.id === "react-native" ||
+                tech.id === "electron";
 
               return (
                 <Spring
@@ -115,9 +115,10 @@ class Projects extends Component {
                             right: imagePosition.right,
                             top: imagePosition.top,
                             bottom: imagePosition.bottom,
-                            transform: tech.id == 'android' ? imagePosition.transform : props.transform
+                            transform: tech.id === 'android' ? imagePosition.transform : props.transform
                           }}
                           className={styles.background_image}
+                          alt=""
                         ></img>
                       </Div>
                     )
