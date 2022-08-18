@@ -3,12 +3,13 @@ import reactNativeIcon from 'Icons/technology/react-native-tech-icon.png';
 import androidIcon from 'Icons/technology/android-tech-icon.png';
 import laravelIcon from 'Icons/technology/laravel-tech-icon.png';
 import electronIcon from 'Icons/technology/electron-tech-icon.png';
-
+import nextIcon from 'Icons/technology/nextjs-tech-icon.png'
 import reactBackgroundImage from 'Images/technology/react-background-image.png';
 import reactNativeBackgroundImage from 'Images/technology/react-native-background-image.png';
 import androidBackgroundImage from 'Images/technology/android-background-image.png';
 import laravelBackgroundImage from 'Images/technology/laravel-background-image.png';
 import electronBackgroundImage from 'Images/technology/electron-background-image.png';
+import nextBackgroundImage from 'Images/technology/Nextjs-background-image.png';
 
 export const techList = [
   {
@@ -18,7 +19,7 @@ export const techList = [
     backgroundImage: reactBackgroundImage,
     description: `I have the most as well as recent experience in React compared to other technology in my list. I have created and architected web projects from scratch as well as jumped on ongoing projects.
     <br/><br/>I am familiar with recent techniques and libraries used in react like code-splitting, Hooks, React-Router, Final-Form, Redux, Redux-api-middleware, css in js, etc.`,
-    projects: ['snapteam', 'nykaa', 'wakency'],
+    projects: ['snapteam', 'wakency'],
   },
   {
     id: 'android',
@@ -55,5 +56,13 @@ export const techList = [
     backgroundImage: electronBackgroundImage,
     description: 'I have experience in creating an electron app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.',
     projects: ['snapteam']
+  },
+  {
+    id: 'next',
+    name: 'Next',
+    firstLogo: nextIcon,
+    backgroundImage: nextBackgroundImage,
+    description: 'I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.',
+    projects: ['debGames']
   }
 ];

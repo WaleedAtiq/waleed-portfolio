@@ -1,6 +1,7 @@
 import bijliIcon from 'Icons/project-icon-bijli.png';
 import wakencyIcon from 'Icons/project-icon-wakency.png';
 import nykaaIcon from 'Icons/project-icon-nykaa.png';
+import debgamesIcon from 'Icons/debgames.svg'
 import pulseIcon from 'Icons/project-icon-pulse.png';
 import lighthouseIcon from 'Icons/project-icon-lighthouse.png';
 import benefactoryIcon from 'Icons/project-icon-benefactory.png';
@@ -107,14 +108,49 @@ export const projectsListValue = {
       }
     ]
   },
-  nykaa: {
-    name: 'Nykaa',
-    tech: ['react'],
-    icon: nykaaIcon,
+  debGames: {
+    name: 'DebGames',
+    tech: ['next'],
+    icon: debgamesIcon,
     involvement: 'Intermittent',
     link: {
       type: 'visit',
-      value: 'https://hashonecreatives.com/'
+      value: 'https://g2a-next.vercel.app/'
+    },
+    description: [
+      {
+        type: 'text',
+        highlight: 'green',
+        value: "Nykaa is an e-commerce website offering beauty and wellness products from more than 500 leading brands. <br/><br/>Nykaa follows an inventory-based model with warehouses in Mumbai, New Delhi, and Chennai as its offline presence is in 60 stores and expanding"
+      },
+      {
+        type: 'header',
+        value: 'My Contribution :',        
+      },
+      {
+        type: 'text',
+        value: 'I was actively involved in building new features like new signup/signin flow, had introduced a AR makeup try-on using Modi-face for the iOS webview with stage releases.<br/>Also maintained entire Nykaa Pro module while working on these new features.'
+      },
+      {
+        type: 'points',
+        value: [
+          'New mobile signup/signin flow',
+          'Trending Search and Search history',
+          'Nykaa Pro',
+          'Worked on a AR makeup try-on with modiface',
+          'Unit test cases with jest'
+        ]
+      }
+    ]
+  },
+  nykaa: {
+    name: 'DebGames',
+    tech: ['next'],
+    icon: debgamesIcon,
+    involvement: 'Intermittent',
+    link: {
+      type: 'visit',
+      value: 'https://g2a-next.vercel.app/'
     },
     description: [
       {
