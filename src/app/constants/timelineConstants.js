@@ -25,7 +25,7 @@ export const timelineListValue = [
     restLogo: hashLogoRest,
     restMargin: 36, // the secound image margin because logo length is different
     backgroundImage: nykaaBackgroundImage,
-    projects: ['nykaa']
+    projects: ['debGames']
   },
   {
     id: 'tailoredtech',
