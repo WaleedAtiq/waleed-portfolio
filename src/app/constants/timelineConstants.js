@@ -7,9 +7,11 @@ import aimsolLogoRest from 'Images/aimsol-logo-rest.png';
 import pksolLogoFirst from 'Images/pksol-logo-first.png';
 import pksolLogoRest from 'Images/pksol-logo-rest.png';
 
+import hashoneBackgroundImage from 'Images/background/background-image-hashone.jpg';
 import nykaaBackgroundImage from 'Images/background/background-image-nykaa.jpg';
 import tailoredTechBackgroundImage from 'Images/background/background-image-tailoredtech.jpg';
 import collegeBackgroundImage from 'Images/background/background-image-college.jpg';
+import pksolBackgroundImage from 'Images/background/background-image-pksol.png';
 
 export const timelineListValue = [
   {
@@ -24,8 +26,8 @@ export const timelineListValue = [
     firstLogo: hashLogoFirst,
     restLogo: hashLogoRest,
     restMargin: 36, // the secound image margin because logo length is different
-    backgroundImage: nykaaBackgroundImage,
-    projects: ['debGames']
+    backgroundImage: hashoneBackgroundImage,
+    projects: ['debGames', 'nuptially', 'doveDiamond']
   },
   {
     id: 'tailoredtech',
@@ -40,7 +42,7 @@ export const timelineListValue = [
     restLogo: aimsolLogoRest,
     restMargin: 34,
     backgroundImage: tailoredTechBackgroundImage,
-    projects: ['snapteam', 'pulse', 'measure', 'wakency', 'benefactory', 'lighthouse']
+    projects: ['debGames', 'nuptially']
   },
   {
     id: 'mit',
@@ -54,8 +56,8 @@ export const timelineListValue = [
     firstLogo: pksolLogoFirst,
     restLogo: pksolLogoRest,
     restMargin: 37,
-    backgroundImage: collegeBackgroundImage,
-    projects: ['vc_music_player']
+    backgroundImage: pksolBackgroundImage,
+    projects: ['debGames', 'nuptially']
   }
 ];
 

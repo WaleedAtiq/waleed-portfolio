@@ -39,6 +39,16 @@ const projectImages = {
     false,
     /.*\.png$/
   ),
+  nuptially: require.context(
+    `../../assets/images/projectImages/debGames`,
+    false,
+    /.*\.png$/
+  ),
+  doveDiamond: require.context(
+    `../../assets/images/projectImages/debGames`,
+    false,
+    /.*\.png$/
+  ),
   vc_music_player: require.context(
     `../../assets/images/projectImages/vc_music_player`,
     false,
