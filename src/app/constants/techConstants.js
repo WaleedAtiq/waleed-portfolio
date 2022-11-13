@@ -64,5 +64,14 @@ export const techList = [
     backgroundImage: nextBackgroundImage,
     description: 'I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.',
     projects: ['debGames', 'nuptially']
+  },
+  {
+    id: 'vue',
+    name: 'VUE',
+    firstLogo: nextIcon,
+    backgroundImage: nextBackgroundImage,
+    description: 'I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.',
+    projects: ['debGames', 'nuptially']
   }
 ];
+
