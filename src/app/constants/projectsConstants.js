@@ -9,6 +9,7 @@ import benefactoryIcon from 'Icons/project-icon-benefactory.png';
 import measureIcon from 'Icons/project-icon-measure.png';
 import vcMusicPlayerIcon from 'Icons/project-icon-vc-music-player.png';
 import doveDiamondPlayerIcon from 'Icons/project-icon-diamonds.svg';
+import yoovIcon from 'Icons/project-icon-yoov.svg';
 
 export const projectsListValue = {
   debGames: {
@@ -87,6 +88,40 @@ export const projectsListValue = {
     link: {
       type: 'visit',
       value: 'https://www.dovediamonds.com.au/'
+    },
+    description: [
+      {
+        type: 'text',
+        highlight: 'green',
+        value: "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets"
+      },
+      {
+        type: 'header',
+        value: 'My Contribution :',
+      },
+      {
+        type: 'text',
+        value: 'I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.'
+      },
+      {
+        type: 'points',
+        value: [
+          'Signup/signin flow',
+          'Trending Search and Search history',
+          'DebGames Pro',
+          'Unit test cases'
+        ]
+      }
+    ]
+  },
+  yoov: {
+    name: 'Yoov',
+    tech: ['Vue'],
+    icon: yoovIcon,
+    involvement: 'Intermittent',
+    link: {
+      type: 'visit',
+      value: 'https://yoov.com/hk/en/'
     },
     description: [
       {

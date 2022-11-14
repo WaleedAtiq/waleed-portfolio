@@ -3,6 +3,7 @@ import reactNativeIcon from 'Icons/technology/react-native-tech-icon.png';
 import androidIcon from 'Icons/technology/android-tech-icon.png';
 import laravelIcon from 'Icons/technology/laravel-tech-icon.png';
 import electronIcon from 'Icons/technology/electron-tech-icon.png';
+import vueIcon from 'Icons/technology/vue-tech-icon.svg';
 import nextIcon from 'Icons/technology/nextjs-tech-icon.png'
 import reactBackgroundImage from 'Images/technology/react-background-image.png';
 import reactNativeBackgroundImage from 'Images/technology/react-native-background-image.png';
@@ -67,11 +68,11 @@ export const techList = [
   },
   {
     id: 'vue',
-    name: 'VUE',
-    firstLogo: nextIcon,
-    backgroundImage: nextBackgroundImage,
+    name: 'Vue',
+    firstLogo: vueIcon,
+    backgroundImage: vueIcon,
     description: 'I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.',
-    projects: ['debGames', 'nuptially']
+    projects: ['yoov']
   }
 ];
 

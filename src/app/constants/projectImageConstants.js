@@ -49,6 +49,11 @@ const projectImages = {
     false,
     /.*\.png$/
   ),
+  yoov: require.context(
+    `../../assets/images/projectImages/debGames`,
+    false,
+    /.*\.png$/
+  ),
   vc_music_player: require.context(
     `../../assets/images/projectImages/vc_music_player`,
     false,
