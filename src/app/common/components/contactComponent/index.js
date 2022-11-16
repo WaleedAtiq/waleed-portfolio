@@ -40,7 +40,7 @@ const ContactComponent = ({ className, isWhite, hideResume }) => {
       </a>
       {
         !hideResume && (
-          <a className={styles.icon_link} rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/1z8ixhQuj3lK84B3Pi_DT2fg11zmQFdH4/view?usp=sharing">
+          <a className={styles.icon_link} rel="noopener noreferrer" target="_blank" href="https://drive.google.com/file/d/11MLdCJHQQqFs4QhiENKTWNdcX5j_Qe3A/view?usp=share_link">
           <img
             src={isWhite ? iconResumeWhite : iconResume}
             className={styles.icon}

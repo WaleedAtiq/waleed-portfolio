@@ -1,64 +1,64 @@
 const projectImages = {
-  snapteam: require.context(
-    `../../assets/images/projectImages/snapteam`,
-    false,
-    /.*\.png$/
-  ),
-  pulse: require.context(
-    `../../assets/images/projectImages/pulse`,
-    false,
-    /.*\.png$/
-  ),
-  measure: require.context(
-    `../../assets/images/projectImages/measure`,
-    false,
-    /.*\.png$/
-  ),
-  wakency: require.context(
-    `../../assets/images/projectImages/wakency`,
-    false,
-    /.*\.png$/
-  ),
-  benefactory: require.context(
-    `../../assets/images/projectImages/benefactory`,
-    false,
-    /.*\.png$/
-  ),
-  lighthouse: require.context(
-    `../../assets/images/projectImages/lighthouse`,
-    false,
-    /.*\.png$/
-  ),
-  nykaa: require.context(
-    `../../assets/images/projectImages/nykaa`,
-    false,
-    /.*\.png$/
-  ),
+  // snapteam: require.context(
+  //   `../../assets/images/projectImages/snapteam`,
+  //   false,
+  //   /.*\.png$/
+  // ),
+  // pulse: require.context(
+  //   `../../assets/images/projectImages/pulse`,
+  //   false,
+  //   /.*\.png$/
+  // ),
+  // measure: require.context(
+  //   `../../assets/images/projectImages/measure`,
+  //   false,
+  //   /.*\.png$/
+  // ),
+  // wakency: require.context(
+  //   `../../assets/images/projectImages/wakency`,
+  //   false,
+  //   /.*\.png$/
+  // ),
+  // benefactory: require.context(
+  //   `../../assets/images/projectImages/benefactory`,
+  //   false,
+  //   /.*\.png$/
+  // ),
+  // lighthouse: require.context(
+  //   `../../assets/images/projectImages/lighthouse`,
+  //   false,
+  //   /.*\.png$/
+  // ),
+  // nykaa: require.context(
+  //   `../../assets/images/projectImages/nykaa`,
+  //   false,
+  //   /.*\.png$/
+  // ),
   debGames: require.context(
     `../../assets/images/projectImages/debGames`,
     false,
     /.*\.png$/
   ),
   nuptially: require.context(
-    `../../assets/images/projectImages/debGames`,
+    `../../assets/images/projectImages/nuptially`,
     false,
     /.*\.png$/
   ),
   doveDiamond: require.context(
-    `../../assets/images/projectImages/debGames`,
+    `../../assets/images/projectImages/doveDiamond`,
     false,
     /.*\.png$/
   ),
   yoov: require.context(
-    `../../assets/images/projectImages/debGames`,
+    `../../assets/images/projectImages/yoov`,
     false,
     /.*\.png$/
   ),
-  vc_music_player: require.context(
-    `../../assets/images/projectImages/vc_music_player`,
-    false,
-    /.*\.png$/
-  ),
+  // vc_music_player: require.context(
+  //   `../../assets/images/projectImages/vc_music_player`,
+  //   false,
+  //   /.*\.png$/
+  // ),
 };
 
 export const getProjectImages = (id) => {
