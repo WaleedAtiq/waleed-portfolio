@@ -1,26 +1,26 @@
-import reactIcon from 'Icons/technology/react-tech-icon.png';
-import reactNativeIcon from 'Icons/technology/react-native-tech-icon.png';
-import androidIcon from 'Icons/technology/android-tech-icon.png';
-import laravelIcon from 'Icons/technology/laravel-tech-icon.png';
-import electronIcon from 'Icons/technology/electron-tech-icon.png';
-import vueIcon from 'Icons/technology/vue-tech-icon.svg';
-import nextIcon from 'Icons/technology/nextjs-tech-icon.png'
-import reactBackgroundImage from 'Images/technology/react-background-image.png';
-import reactNativeBackgroundImage from 'Images/technology/react-native-background-image.png';
-import androidBackgroundImage from 'Images/technology/android-background-image.png';
-import laravelBackgroundImage from 'Images/technology/laravel-background-image.png';
-import electronBackgroundImage from 'Images/technology/electron-background-image.png';
-import nextBackgroundImage from 'Images/technology/Nextjs-background-image.png';
+import reactIcon from "Icons/technology/react-tech-icon.png";
+import reactNativeIcon from "Icons/technology/react-native-tech-icon.png";
+import androidIcon from "Icons/technology/android-tech-icon.png";
+import laravelIcon from "Icons/technology/laravel-tech-icon.png";
+import electronIcon from "Icons/technology/electron-tech-icon.png";
+import vueIcon from "Icons/technology/vue-tech-icon.svg";
+import nextIcon from "Icons/technology/nextjs-tech-icon.png";
+import reactBackgroundImage from "Images/technology/react-background-image.png";
+import reactNativeBackgroundImage from "Images/technology/react-native-background-image.png";
+import androidBackgroundImage from "Images/technology/android-background-image.png";
+import laravelBackgroundImage from "Images/technology/laravel-background-image.png";
+import electronBackgroundImage from "Images/technology/electron-background-image.png";
+import nextBackgroundImage from "Images/technology/Nextjs-background-image.png";
 
 export const techList = [
   {
-    id: 'react',
-    name: 'React',
+    id: "react",
+    name: "React",
     firstLogo: reactIcon,
     backgroundImage: reactBackgroundImage,
     description: `I have the most as well as recent experience in React compared to other technology in my list. I have created and architected web projects from scratch as well as jumped on ongoing projects.
     <br/><br/>I am familiar with recent techniques and libraries used in react like code-splitting, Hooks, React-Router, Final-Form, Redux, Redux-api-middleware, css in js, etc.`,
-    projects: ['debGames', 'nuptially'],
+    projects: ["mikacycle", "cozmo"],
   },
   // {
   //   id: 'android',
@@ -42,13 +42,13 @@ export const techList = [
   //   projects: ['lighthouse', 'pulse']
   // },
   {
-    id: 'laravel',
-    name: 'Laravel',
+    id: "laravel",
+    name: "Laravel",
     firstLogo: laravelIcon,
     backgroundImage: laravelBackgroundImage,
     description: `I have a bit of experience in Laravel and backend development although have not created any project from scratch but have worked on seperate modules and features.<br/><br/>
     I am familiar with backend development and the frameworks features like: MVC architecture, HTML template engine (blade), Eloquent ORM, Artisan and Seeders.`,
-    projects: ['doveDiamond']
+    projects: ["doveDiamond"],
   },
   // {
   //   id: 'electron',
@@ -59,20 +59,21 @@ export const techList = [
   //   projects: ['snapteam']
   // },
   {
-    id: 'next',
-    name: 'Next',
+    id: "next",
+    name: "Next",
     firstLogo: nextIcon,
     backgroundImage: nextBackgroundImage,
-    description: 'I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.',
-    projects: ['debGames', 'nuptially']
+    description:
+      "I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.",
+    projects: ["debGames", "nuptially"],
   },
   {
-    id: 'vue',
-    name: 'Vue',
+    id: "vue",
+    name: "Vue",
     firstLogo: vueIcon,
     backgroundImage: vueIcon,
-    description: 'I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.',
-    projects: ['yoov']
-  }
+    description:
+      "I have experience in creating an next app with the help of React while also considering platform specific technicalities during development like, Desktop/Web notifications, screen routing, storage.<br/><br/>Written configurations to bundle Web app and Electron app seperatly for both.",
+    projects: ["yoov"],
+  },
 ];
-

@@ -1,152 +1,234 @@
-import bijliIcon from 'Icons/project-icon-bijli.png';
-import wakencyIcon from 'Icons/project-icon-wakency.png';
-import nykaaIcon from 'Icons/project-icon-nykaa.png';
-import debgamesIcon from 'Icons/debgames.svg'
-import nuptiallyIcon from 'Icons/project-icon-nuptially.svg'
-import pulseIcon from 'Icons/project-icon-pulse.png';
-import lighthouseIcon from 'Icons/project-icon-lighthouse.png';
-import benefactoryIcon from 'Icons/project-icon-benefactory.png';
-import measureIcon from 'Icons/project-icon-measure.png';
-import vcMusicPlayerIcon from 'Icons/project-icon-vc-music-player.png';
-import doveDiamondPlayerIcon from 'Icons/project-icon-diamonds.svg';
-import yoovIcon from 'Icons/project-icon-yoov.svg';
+import bijliIcon from "Icons/project-icon-bijli.png";
+import wakencyIcon from "Icons/project-icon-wakency.png";
+import nykaaIcon from "Icons/project-icon-nykaa.png";
+import mikaIcon from "Icons/mikacycle.png";
+import debgamesIcon from "Icons/debgames.svg";
+import nuptiallyIcon from "Icons/project-icon-nuptially.svg";
+import pulseIcon from "Icons/project-icon-pulse.png";
+import lighthouseIcon from "Icons/project-icon-lighthouse.png";
+import benefactoryIcon from "Icons/project-icon-benefactory.png";
+import measureIcon from "Icons/project-icon-measure.png";
+import vcMusicPlayerIcon from "Icons/project-icon-vc-music-player.png";
+import doveDiamondPlayerIcon from "Icons/project-icon-diamonds.svg";
+import yoovIcon from "Icons/project-icon-yoov.svg";
+import cozmoIcon from "Icons/cozmo-icon.png";
 
 export const projectsListValue = {
   debGames: {
-    name: 'DebGames',
-    tech: ['next'],
+    name: "DebGames",
+    tech: ["next"],
     icon: debgamesIcon,
-    involvement: 'Intermittent',
+    involvement: "Intermittent",
     link: {
-      type: 'visit',
-      value: 'https://g2a-next.vercel.app/'
+      type: "visit",
+      value: "https://g2a-next.vercel.app/",
     },
     description: [
       {
-        type: 'text',
-        highlight: 'green',
-        value: "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets"
+        type: "text",
+        highlight: "green",
+        value:
+          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
       },
       {
-        type: 'header',
-        value: 'My Contribution :',
+        type: "header",
+        value: "My Contribution :",
       },
       {
-        type: 'text',
-        value: 'I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.'
+        type: "text",
+        value:
+          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
       },
       {
-        type: 'points',
+        type: "points",
         value: [
-          'Signup/signin flow',
-          'Trending Search and Search history',
-          'DebGames Pro',
-          'Unit test cases'
-        ]
-      }
-    ]
+          "Signup/signin flow",
+          "Trending Search and Search history",
+          "DebGames Pro",
+          "Unit test cases",
+        ],
+      },
+    ],
   },
   nuptially: {
-    name: 'Nuptially',
-    tech: ['next'],
+    name: "Nuptially",
+    tech: ["next"],
     icon: nuptiallyIcon,
-    involvement: 'Intermittent',
+    involvement: "Intermittent",
     link: {
-      type: 'visit',
-      value: 'https://nuptially.vercel.app/'
+      type: "visit",
+      value: "https://nuptially.vercel.app/",
     },
     description: [
       {
-        type: 'text',
-        highlight: 'green',
-        value: "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets"
+        type: "text",
+        highlight: "green",
+        value:
+          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
       },
       {
-        type: 'header',
-        value: 'My Contribution :',
+        type: "header",
+        value: "My Contribution :",
       },
       {
-        type: 'text',
-        value: 'I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.'
+        type: "text",
+        value:
+          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
       },
       {
-        type: 'points',
+        type: "points",
         value: [
-          'Signup/signin flow',
-          'Trending Search and Search history',
-          'DebGames Pro',
-          'Unit test cases'
-        ]
-      }
-    ]
+          "Signup/signin flow",
+          "Trending Search and Search history",
+          "DebGames Pro",
+          "Unit test cases",
+        ],
+      },
+    ],
   },
   doveDiamond: {
-    name: 'Dove Diamond',
-    tech: ['laravel'],
+    name: "Dove Diamond",
+    tech: ["laravel"],
     icon: doveDiamondPlayerIcon,
-    involvement: 'Intermittent',
+    involvement: "Intermittent",
     link: {
-      type: 'visit',
-      value: 'https://www.dovediamonds.com.au/'
+      type: "visit",
+      value: "https://www.dovediamonds.com.au/",
     },
     description: [
       {
-        type: 'text',
-        highlight: 'green',
-        value: "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets"
+        type: "text",
+        highlight: "green",
+        value:
+          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
       },
       {
-        type: 'header',
-        value: 'My Contribution :',
+        type: "header",
+        value: "My Contribution :",
       },
       {
-        type: 'text',
-        value: 'I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.'
+        type: "text",
+        value:
+          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
       },
       {
-        type: 'points',
+        type: "points",
         value: [
-          'Signup/signin flow',
-          'Trending Search and Search history',
-          'DebGames Pro',
-          'Unit test cases'
-        ]
-      }
-    ]
+          "Signup/signin flow",
+          "Trending Search and Search history",
+          "DebGames Pro",
+          "Unit test cases",
+        ],
+      },
+    ],
   },
   yoov: {
-    name: 'Yoov',
-    tech: ['Vue'],
+    name: "Yoov",
+    tech: ["Vue"],
     icon: yoovIcon,
-    involvement: 'Intermittent',
+    involvement: "Intermittent",
     link: {
-      type: 'visit',
-      value: 'https://yoov.com/hk/en/'
+      type: "visit",
+      value: "https://yoov.com/hk/en/",
     },
     description: [
       {
-        type: 'text',
-        highlight: 'green',
-        value: "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets"
+        type: "text",
+        highlight: "green",
+        value:
+          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
       },
       {
-        type: 'header',
-        value: 'My Contribution :',
+        type: "header",
+        value: "My Contribution :",
       },
       {
-        type: 'text',
-        value: 'I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.'
+        type: "text",
+        value:
+          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
       },
       {
-        type: 'points',
+        type: "points",
         value: [
-          'Signup/signin flow',
-          'Trending Search and Search history',
-          'DebGames Pro',
-          'Unit test cases'
-        ]
-      }
-    ]
+          "Signup/signin flow",
+          "Trending Search and Search history",
+          "DebGames Pro",
+          "Unit test cases",
+        ],
+      },
+    ],
+  },
+  mikacycle: {
+    name: "MikaCycle",
+    tech: ["React"],
+    icon: mikaIcon,
+    involvement: "Intermittent",
+    link: {
+      type: "visit",
+      value: "https://mikacycle.com/",
+    },
+    description: [
+      {
+        type: "text",
+        highlight: "green",
+        value:
+          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
+      },
+      {
+        type: "header",
+        value: "My Contribution :",
+      },
+      {
+        type: "text",
+        value:
+          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
+      },
+      {
+        type: "points",
+        value: [
+          "Signup/signin flow",
+          "Trending Search and Search history",
+          "DebGames Pro",
+          "Unit test cases",
+        ],
+      },
+    ],
+  },
+  cozmo: {
+    name: "Cozmo",
+    tech: ["React"],
+    icon: cozmoIcon,
+    involvement: "Intermittent",
+    link: {
+      type: "visit",
+      value: "https://demowebs.1stopwebsitesolution.com/cozmoscrypto-react/",
+    },
+    description: [
+      {
+        type: "text",
+        highlight: "green",
+        value:
+          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
+      },
+      {
+        type: "header",
+        value: "My Contribution :",
+      },
+      {
+        type: "text",
+        value:
+          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
+      },
+      {
+        type: "points",
+        value: [
+          "Signup/signin flow",
+          "Trending Search and Search history",
+          "DebGames Pro",
+          "Unit test cases",
+        ],
+      },
+    ],
   },
   // snapteam: {
   //   name: 'Snapteam/Bijli',

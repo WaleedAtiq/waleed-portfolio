@@ -54,6 +54,16 @@ const projectImages = {
     false,
     /.*\.png$/
   ),
+  mikacycle: require.context(
+    `../../assets/images/projectImages/mikacycle`,
+    false,
+    /.*\.png$/
+  ),
+  cozmo: require.context(
+    `../../assets/images/projectImages/cozmo`,
+    false,
+    /.*\.png$/
+  ),
   // vc_music_player: require.context(
   //   `../../assets/images/projectImages/vc_music_player`,
   //   false,
