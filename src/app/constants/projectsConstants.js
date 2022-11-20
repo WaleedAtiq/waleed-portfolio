@@ -51,7 +51,7 @@ export const projectsListValue = {
     ],
   },
   nuptially: {
-    name: "Nuptially",
+    name: "Nuptially (In progress)",
     tech: ["next"],
     icon: nuptiallyIcon,
     involvement: "Intermittent",
@@ -64,7 +64,7 @@ export const projectsListValue = {
         type: "text",
         highlight: "green",
         value:
-          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
+          "With the largest network of local wedding vendors, Nuptially offers the most comprehensive wedding site out there. You will be able to find the best vendor for your budget and plan your wedding exactly the way you envisioned it. They make it simple to get the pricing, availability, and answers you need from wedding venues and wedding vendors across every town.",
       },
       {
         type: "header",
@@ -73,14 +73,13 @@ export const projectsListValue = {
       {
         type: "text",
         value:
-          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
+          "I was actively involved in building UI of whole site, features like signup/signin flow.",
       },
       {
         type: "points",
         value: [
           "Signup/signin flow",
           "Trending Search and Search history",
-          "DebGames Pro",
           "Unit test cases",
         ],
       },
@@ -135,7 +134,7 @@ export const projectsListValue = {
         type: "text",
         highlight: "green",
         value:
-          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
+          "YOOV is a fast-growing technology company, there are over 200 talents in our team. They have developed a reliable corporate management system, to drive digital transformation among clients from different industries and sizes.",
       },
       {
         type: "header",
@@ -143,18 +142,17 @@ export const projectsListValue = {
       },
       {
         type: "text",
-        value:
-          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
+        value: "I was actively involved in building UI of whole site.",
       },
-      {
-        type: "points",
-        value: [
-          "Signup/signin flow",
-          "Trending Search and Search history",
-          "DebGames Pro",
-          "Unit test cases",
-        ],
-      },
+      // {
+      //   type: "points",
+      //   value: [
+      //     "Signup/signin flow",
+      //     "Trending Search and Search history",
+      //     "DebGames Pro",
+      //     "Unit test cases",
+      //   ],
+      // },
     ],
   },
   mikacycle: {
