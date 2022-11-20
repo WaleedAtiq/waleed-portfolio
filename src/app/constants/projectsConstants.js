@@ -100,7 +100,7 @@ export const projectsListValue = {
         type: "text",
         highlight: "green",
         value:
-          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
+          "Dove Diamonds is 100% Australian owned and all our engagement rings and fine jewellery are manufactured in Australia. With 35 plus years in the jewellery industry, they have an exceptional team of master designers and jewellers who manufacture all our jewellery to the highest standard. ",
       },
       {
         type: "header",
@@ -109,14 +109,13 @@ export const projectsListValue = {
       {
         type: "text",
         value:
-          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
+          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also build a 'BUILD YOUR OWN RING' module while working on these new features.",
       },
       {
         type: "points",
         value: [
           "Signup/signin flow",
           "Trending Search and Search history",
-          "DebGames Pro",
           "Unit test cases",
         ],
       },
@@ -172,7 +171,7 @@ export const projectsListValue = {
         type: "text",
         highlight: "green",
         value:
-          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
+          "MikaCycle is one of the largest plastic recycling expert, they went to discover the journey of sourcing recycled plastic by providing trading services for manufacturers and brands, and discovered some pain points and weaknesses in the procurement process.",
       },
       {
         type: "header",
@@ -181,14 +180,13 @@ export const projectsListValue = {
       {
         type: "text",
         value:
-          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
+          "I was actively involved in building UI of whole site, features like signup/signin flow.",
       },
       {
         type: "points",
         value: [
           "Signup/signin flow",
           "Trending Search and Search history",
-          "DebGames Pro",
           "Unit test cases",
         ],
       },
@@ -208,7 +206,7 @@ export const projectsListValue = {
         type: "text",
         highlight: "green",
         value:
-          "DebGames is One of the largest ecommerce marketplace for verified video games, software licence and other digital assets",
+          "Cozmos is a Top of the Line Platform providing Secure and Fast Transactions around the world with just a few clicks.",
       },
       {
         type: "header",
@@ -217,14 +215,13 @@ export const projectsListValue = {
       {
         type: "text",
         value:
-          "I was actively involved in building UI of whole site, features like signup/signin flow. <br/>Also maintained entire DebGames Pro module while working on these new features.",
+          "I was actively involved in building UI of whole site, and integrating upto dates graphs and marketprice.",
       },
       {
         type: "points",
         value: [
-          "Signup/signin flow",
+          "Marketprice Graphs",
           "Trending Search and Search history",
-          "DebGames Pro",
           "Unit test cases",
         ],
       },
